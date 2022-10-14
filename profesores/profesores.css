@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+    )
+    ,url("media/fondo.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/***************************** SECCION : PROFESORES *************************/
+
+.profesores {
+    position: relative;
+    
+}
+
+.quitar {
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.subtitulo_general {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: rgb(180, 180, 180);
+    margin-bottom: 50px;
+}
+
+.container_general {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.img_gen{
+    width: 400px;
+}
+
+.container_general p {
+    color: rgb(255, 254, 254);
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 2;
+    line-height: 25px;
+    transition: all 1s ease;
+}
+
+.container_general p:hover {
+    background-color: rgba(55, 217, 241, .3);
+}
+
+/* **************************************************** */
+
+.inicio_profesor {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.inicio_profesor p {
+    width: 100%;
+    font-size: 25px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+.inicio_profesor span {
+    color: #bb2929;
+}
+
+/* **************************************************** */
+
+
+.botones_profesor {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.boton_general button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.boton_general button:hover {
+    background-color: blueviolet;
+}
+
+.boton_general form input {
+    padding: 5px 15px;
+}
+
+.txt_alumno_profesor{
+    background-color: rgba(100, 100, 100, .7);
+    color: rgb(250, 250, 250);
+}
+
+.btn_profesor label {
+    color: rgb(200, 200, 200);
+    font-size: 18px;
+}
+
+.txt_alumno_profesor {
+    font-size: 20px;
+}
+
+.btnDelete {
+    width: 30px;
+    height: 30px;
+}
+
+.texto_final {
+    font-size: 30px;
+    color: rgb(20, 20, 20);
+    font-weight: 500;
+}
+
+
+/*************************** SECCION : MODAL - PROFESORES *************************/
+
+.modal_profesor {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #bdc3c7; 
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.modal_profesor h2 {
+    font-size: 4rem;
+}
+
+.modal_profesor_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.modal_profesor_container .profesor_texto {
+    width: 60%;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(220, 220, 220);
+}
+.modal_profesor_container .formulario {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formulario_label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.formulario_grupo {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario_input {
+    width: 40%;
+    padding: 5px 0px 5px 5px;
+}
+
+.formulario__input-error {
+    width: 40%;
+	margin-bottom: 0;
+    text-align: left;
+    color: rgb(121, 35, 35);
+    font-size: 1.3rem;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	top: 6px;
+    left: 220px;
+	font-size: 16px;
+    opacity: 0;
+}
+
+.modal_profesor .modal_profesor_container form button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.modal_profesor .modal_profesor_container form button:hover {
+    background-color: blueviolet;
+}
+
+
+/* -------------------------  ESTILOS PARA LA VALIDACIÓN ------------------------- */
+
+.formulario_grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario_grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/****** SECCION : QUITAR MODAL - PROFESORES *****/
+
+.modal_profesor_out {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+}
+
+/****** SECCION : TABLA - PROFESORES *****/
+
+.table {
+    width: 50%;
+    padding-top: 30px;
+    margin: auto;
+}
+.table tr th {
+    background-color: rgb(80, 80, 80);
+    color: rgb(250, 250, 250);
+    padding: 10px 30px;
+}
+
+.table td {
+    background-color: rgb(200, 200, 200);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+/****** SECCION : INPUTS INVÁLIDOS - PROFESORES *****/
+
+.invalid_inputs {
+    border: solid 1px rgb(250, 0, 0);
+    box-shadow: 0 0 10px rgb(250, 0, 0);
+}

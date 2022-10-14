@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5f9b97f34f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="profesores.css">
+
+    <title>PROFESORES</title>
+</head>
+<body>
+    
+    <section class="quitar" id="profesores">
+
+        <h2 class="subtitulo_general">SECCIÓN: PROFESORES</h2>
+
+        <div class="container_general">
+
+            <img src="media/profesores.jpg" alt="" class="img_gen">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta debitis, fugit inventore esse sequi tempora facere, 
+                aliquam asperiores repellat nobis incidunt dolores ab id, vel vero natus laudantium voluptatem laboriosam! Lorem 
+                ipsum dolor sit amet consectetur, adipisicing elit. Alias quasi praesentium in quia expedita dolore quibusdam ex 
+                molestias ab corrupti aliquid, est veritatis minima reprehenderit quo numquam obcaecati asperiores molestiae. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus quam quod excepturi. Labore vero maiores
+                , cumque ab eum, obcaecati exercitationem cupiditate dolores dolore omnis reprehenderit facilis deserunt voluptatum. Saepe!
+            </p>
+
+        </div>
+
+        <div class="inicio_profesor">
+
+        </div>
+
+        <div class="botones_profesor">
+
+            <div class="btn_profesor boton_general">
+                <input type="text" placeholder="Ingrese la sección" id="list" class="list" name="list">
+                <button id="profesor1">VER LISTA</button> <br> <br>
+                <p id="text_profesor" class="txt_alumno_profesor"></p>
+            </div>
+
+            <div class="btn_profesor boton_general">
+
+                <form action="">
+
+                    <label for="section">Ingrese la sección:</label> <br> <br>
+                    <input type="text" id="section" placeholder="Ingrese la sección" class="input" name="section">
+                    <br> <br>
+                    <label for="nombre">Ingrese el nombre del estudiante:</label> <br> <br>
+                    <input type="text" id="nombre" placeholder="Ingrese al estudiante" class="input1" name="nombre">
+                    <br> <br>
+                    <label for="curso">Ingrese el curso:</label> <br> <br>
+                    <input type="text" id="curso" placeholder="Ingrese el curso" class="input2" name="curso">
+                    <br> <br>
+                    <label for="asistencias">Ingrese el número de asistencias totales:</label> <br> <br>
+                    <input type="text" id="asistencias" placeholder="Ingrese el total de asistencias" class="input3" name="asistencias">
+                    <br> <br>
+                    <label for="faltas">Ingrese el número de faltas totales:</label> <br> <br>
+                    <input type="text" id="faltas" placeholder="Ingrese el total de faltas" class="input4" name="faltas">
+                    <br> <br>
+            
+                    <button id="agregar">AGREGAR</button>  <br> <br>
+                </form>
+            
+                <p id="text2" class="txt_alumno_profesor" ></p>
+
+            </div>
+
+        </div>
+        
+        <div>
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>SECCION</th>
+                        <th>NOMBRE</th>
+                        <th>CURSO</th>
+                        <th>ASISTENCIAS</th>
+                        <th>FALTAS</th>
+                        <th>ELIMINAR</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </section>
+
+    <div class="modal_profesor" id="modal_profesor">
+
+        <div>
+            <h2>INICIAR SESIÓN</h2>
+        </div>
+
+        <div class="modal_profesor_container">
+            <p class="profesor_texto">
+                "El maestro deja una huella <br>
+                para la eternidad; nunca <br>
+                puedes saber cuándo se <br>
+                detiene su influencia."
+            </p>
+
+            <form action="" class="formulario" id="formulario" autocomplete="off">
+                
+            <!-- Grupo usuario -->
+            <div class="formulario_grupo" id="grupo__usuario">
+
+                <label for="" class="formulario_label">Usuario</label>
+
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario_input" name="usuario" id="usuario" placeholder="Usuario:">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+
+                <p class="formulario__input-error">
+                    El usuario tiene que ser de 4 a 16 dígitos y solo puede contener números y letras minúsculas.
+                </p>
+
+            </div>
+
+            <!-- Grupo password -->
+            <div class="formulario_grupo" id="grupo__password">
+
+                <label for="" class="formulario_label">Contraseña</label>
+
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario_input" name="password" id="password" placeholder="password:">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+
+                <p class="formulario__input-error">
+                    La contraseña tiene que ser de 4 a 12 dígitos.
+                </p>
+
+            </div>
+            
+                <button id="btn_modal_profesor">INGRESAR</button>
+            </form>
+         </div>
+
+         <div>
+             <p class="texto_final">UNIVERSIDAD TECNOLÓGICA DEL PERÚ</p>
+        </div>
+    </div>
+
+    <script src="profesores.js"></script>
+</body>
+</html>

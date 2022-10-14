@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5f9b97f34f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="alumnos.css">
+    <title>ALUMNOS</title>
+</head>
+<body>
+
+    <section class="quitar" id="alumnos">
+
+        <h2 class="subtitulo_general">SECCIÓN: ALUMNOS</h2>
+
+        <div class="container_general">
+
+            <img src="media/alumnos.jpg" alt="alumnos" class="img_gen">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta debitis, fugit inventore esse sequi tempora facere, 
+                aliquam asperiores repellat nobis incidunt dolores ab id, vel vero natus laudantium voluptatem laboriosam! Lorem 
+                ipsum dolor sit amet consectetur, adipisicing elit. Alias quasi praesentium in quia expedita dolore quibusdam ex 
+                molestias ab corrupti aliquid, est veritatis minima reprehenderit quo numquam obcaecati asperiores molestiae. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatibus quam quod excepturi. Labore vero maiores
+                , cumque ab eum, obcaecati exercitationem cupiditate dolores dolore omnis reprehenderit facilis deserunt voluptatum. Saepe!
+
+            </p>
+
+        </div>
+
+        <div class="inicio_alumno">
+
+        </div>
+
+        <div class="btn_alumnos">
+
+            <div class="botones_alumnos boton_general">
+                <form action="">
+                    <label for="notas">Visualizar todas sus notas: </label> <br>
+                    <button id="boton2">NOTAS</button> <br> <br>
+                </form>
+
+                <p id="text_alumn1" class="txt_alumno_profesor"></p>
+
+            </div>
+
+            <div class="botones_alumnos boton_general">
+                <form action="">
+                    <label for="ponderado">Ponderado final</label> <br>
+                    <button id="boton4">CLICK AQUÍ</button> <br> <br>
+                 </form>
+
+                 <p id="text_alumn3" class="txt_alumno_profesor"></p>
+                 <p id="text_alumn4" class="txt_alumno_profesor"></p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="modal_alumno" id="modal_alumno">
+
+        <div>
+            <h2>INICIAR SESIÓN</h2>
+        </div>
+
+        <div class="modal_alumno_container">
+            <p class="alumno_texto">
+                "La inteligencia consiste <br>
+                no solo en el conocimiento, <br>
+                sino también en la destreza <br>
+                de aplicar los conocimientos <br>
+                en la práctica."
+            </p>
+
+            <form action="" class="formulario" id="formulario" autocomplete="off">
+                
+            <!-- Grupo código -->
+            <div class="formulario_grupo" id="grupo__codigo">
+
+                <label for="" class="formulario_label">Código de estudiante</label>
+
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario_input" name="codigo" id="codigo" placeholder="Código:">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+
+                <p class="formulario__input-error">
+                    El código tiene que empezar por una letra mayúscula, seguido de 8 números.
+                </p>
+
+            </div>
+
+            <!-- Grupo password -->
+            <div class="formulario_grupo" id="grupo__password">
+
+                <label for="" class="formulario_label">Contraseña</label>
+
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario_input" name="password" id="password" placeholder="password:">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+
+                <p class="formulario__input-error">
+                    La contraseña tiene que ser de 4 a 12 dígitos.
+                </p>
+
+            </div>
+            
+                <button id="btn_modal_alumno">INGRESAR</button>
+            </form>
+         </div>
+
+         <div>
+             <p class="texto_final">UNIVERSIDAD TECNOLÓGICA DEL PERÚ</p>
+        </div>
+    </div>
+
+    <script src="alumnos.js"></script>
+</body>
+</html>

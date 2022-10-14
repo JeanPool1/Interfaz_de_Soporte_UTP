@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+    )
+    ,url("media/fondo.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/**************************** SECCION : ALUMNOS ***************************/
+
+.alumnos {
+    height: 95vh;
+}
+
+.quitar {
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.subtitulo_general {
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: rgb(180, 180, 180);
+    margin-bottom: 50px;
+}
+
+.container_general {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.img_gen{
+    width: 400px;
+}
+
+.container_general p {
+    color: rgb(255, 254, 254);
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 2;
+    line-height: 25px;
+    transition: all 1s ease;
+}
+
+.container_general p:hover {
+    background-color: rgba(55, 217, 241, .3);
+}
+
+/* **************************************************** */
+
+.inicio_alumno {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.inicio_alumno p {
+    width: 100%;
+    font-size: 25px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+}
+
+.inicio_alumno span {
+    color: #bb2929;
+}
+
+/* **************************************************** */
+
+.btn_alumnos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones_alumnos form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton_general form input {
+    padding: 5px 15px;
+}
+
+.botones_alumnos label {
+    color: rgb(200, 200, 200);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.txt_alumno_profesor{
+    background-color: rgba(100, 100, 100, .7);
+    color: rgb(250, 250, 250);
+}
+
+.boton_general button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.boton_general button:hover {
+    background-color: blueviolet;
+}
+
+.txt_alumno_profesor {
+    font-size: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/*************************** SECCION : MODAL - ALUMNOS *************************/
+
+.modal_alumno {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #bdc3c7; 
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.modal_alumno h2 {
+    font-size: 4rem;
+}
+
+.modal_alumno_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.modal_alumno_container .alumno_texto {
+    width: 60%;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(220, 220, 220);
+}
+.modal_alumno_container .formulario {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formulario_label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.formulario_grupo {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario_input {
+    width: 40%;
+    padding: 5px 0px 5px 5px;
+}
+
+.formulario__input-error {
+    width: 40%;
+	margin-bottom: 0;
+    text-align: left;
+    color: rgb(121, 35, 35);
+    font-size: 1.3rem;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	top: 6px;
+    left: 220px;
+	font-size: 16px;
+    opacity: 0;
+}
+
+.modal_alumno .modal_alumno_container form button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.modal_alumno .modal_alumno_container form button:hover {
+    background-color: blueviolet;
+}
+
+.texto_final {
+    font-size: 30px;
+    color: rgb(20, 20, 20);
+    font-weight: 500;
+}
+
+/* -------------------------  ESTILOS PARA LA VALIDACIÓN ------------------------- */
+
+.formulario_grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario_grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+/****** SECCION : QUITAR MODAL - ALUMNOS *****/
+
+.modal_alumno_out {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease;
+}
